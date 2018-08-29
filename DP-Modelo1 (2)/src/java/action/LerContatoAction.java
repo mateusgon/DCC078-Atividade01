@@ -11,25 +11,7 @@ public class LerContatoAction implements Action{
 
     @Override
     public void execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
-        String nome = request.getParameter("textNome");
-        if(nome.equals("")) 
-        {
-            response.sendRedirect("LerContato.jsp");
-        } 
-        else 
-        {
-            Contato contato = new Contato(null, nome, null, null);
-            try
-            {
-                ContatoDAO.getInstance().load(contato);
-                response.sendRedirect("Sucesso.jsp");
-            }
-            catch (SQLException ex)
-            {
-                response.sendRedirect("Erro.jsp");
-                ex.printStackTrace();
-            }
-        }
+        response.sendRedirect("LerContato.jsp");
     }
     
 }

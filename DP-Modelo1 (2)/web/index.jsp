@@ -8,11 +8,11 @@
     <body>
         <nav id="menu">
             <ul>
-                <li><a href="GravarEmpresa.jsp">Gravar empresa</a></li>
-                <li><a href="GravarContato.jsp">Gravar contato</a></li>
-                <li><a href="LerContato.jsp">Ler contato</a></li>
-                <li><a href="AlterarContato.jsp">Alterar contato</a></li>
-                <li><a href="ApagarContato.jsp">Excluir contato</a></li>
+                <li><a href="FrontController?action=GravarEmpresa">Gravar empresa</a></li>
+                <li><a href="FrontController?action=GravarContato">Gravar contato</a></li>
+                <li><a href="FrontController?action=LerContato">Ler contato</a></li>
+                <li><a href="FrontController?action=AlterarContato">Alterar contato</a></li>
+                <li><a href="FrontController?action=ExcluirContato">Excluir contato</a></li>
             </ul>
         </nav>
     </body>

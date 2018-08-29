@@ -7,7 +7,7 @@
     </head>
     <body>
         <h1> Apagar contatos </h1>
-        <form action="FrontController?action=ApagarContato" method="post">
+        <form action="FrontController?action=ApagarContatoPost" method="post">
             Entre com o nome a ser excluído
             <input type="text" name="textNome"/><br/>
             <input type="submit"/>

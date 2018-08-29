@@ -7,7 +7,7 @@
     </head>
     <body>
         <h1> Ler contatos </h1>
-        <form action="FrontController?action=LerContato" method="post">
+        <form action="FrontController?action=LerContatoPost" method="post">
             Entre com o nome a ser encontrado
             <input type="text" name="textNome"/><br/>
             <input type="submit"/>

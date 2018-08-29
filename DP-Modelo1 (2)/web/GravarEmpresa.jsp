@@ -7,7 +7,7 @@
     </head>
     <body>
         <h1>Cadastro de Contatos</h1>
-        <form action="FrontController?action=GravarEmpresa" method="post">
+        <form action="FrontController?action=GravarEmpresaPost" method="post">
             Entre com o código
             <input type="text" name="textCodigo"/><br/>
             Entre com o nome

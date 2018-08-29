@@ -7,7 +7,7 @@
     </head>
     <body>
         <h1>Alteração de Contatos</h1>
-        <form action="FrontController?action=AlterarContato" method="post">
+        <form action="FrontController?action=AlterarContatoPost" method="post">
             Entre com seu nome
             <input type="text" name="textNome"/><br/>
             Entre com seu email

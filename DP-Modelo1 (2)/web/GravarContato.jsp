@@ -1,6 +1,6 @@
 <%@page contentType="text/html"%>
 <%@page pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jstl/core" prefix="c" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <html>
     <head>
@@ -15,12 +15,11 @@
             Entre com seu email
             <input type="text" name="textEmail"/><br/>
             Empresa
-            <select>
-                <option value="1" name="valor">Volvo</option>
-                <option value="2" name="valor">Saab</option>
-                <option value="3" name="valor">Mercedes</option>
-                <option value="4" name="valor">Audi</option>
-            </select> <br/>
+            <select name="valor">
+            <c:forEach var="empresas" items="${empresas}">
+                    <option value="${empresas.codigo}"> ${empresas.nome} </option>
+            </c:forEach>
+            </select>        <br/>
             <input type="submit"/>
         </form>    
     </body>

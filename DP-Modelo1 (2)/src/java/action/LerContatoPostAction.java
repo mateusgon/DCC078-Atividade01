@@ -2,6 +2,7 @@ package action;
 
 import controller.Action;
 import java.sql.SQLException;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import model.Contato;
@@ -22,7 +23,9 @@ public class LerContatoPostAction implements Action{
             try
             {
                 ContatoDAO.getInstance().load(contato);
-                response.sendRedirect("Sucesso.jsp");
+                request.setAttribute("contato", contato);
+                RequestDispatcher dispatcher = request.getRequestDispatcher("lerSucesso.jsp");
+                dispatcher.forward(request, response);
             }
             catch (SQLException ex)
             {

@@ -12,7 +12,7 @@
                 <li><a href="FrontController?action=GravarContato">Gravar contato</a></li>
                 <li><a href="FrontController?action=LerContato">Ler contato</a></li>
                 <li><a href="FrontController?action=AlterarContato">Alterar contato</a></li>
-                <li><a href="FrontController?action=ExcluirContato">Excluir contato</a></li>
+                <li><a href="FrontController?action=ApagarContato">Excluir contato</a></li>
             </ul>
         </nav>
     </body>

@@ -2,10 +2,12 @@ package action;
 
 import controller.Action;
 import java.sql.SQLException;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import model.Contato;
 import persistence.ContatoDAO;
+import persistence.EmpresaDAO;
 
 public class GravarContatoAction implements Action{
 
@@ -14,7 +16,9 @@ public class GravarContatoAction implements Action{
 
     @Override
     public void execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
-        response.sendRedirect("GravarContato.jsp");
+        request.setAttribute("empresas", EmpresaDAO.getInstance().getAllEmpresas());
+        RequestDispatcher dispatcher = request.getRequestDispatcher("GravarContato.jsp");
+        dispatcher.forward(request, response);
     }
     
 }
